@@ -20,7 +20,7 @@ const VideoPlay = () => {
         style={{
           width: '100%',
           height: 'auto',
-          opacity: '0.5', // Adjust the opacity to dim the image
+          opacity: '0.5', 
         }}
       />
       <img
@@ -28,11 +28,11 @@ const VideoPlay = () => {
         alt='icon'
         style={{
           position: 'absolute',
-          width: '50px', // Adjust the size of the icon as needed
+          width: '70px', 
           height: '50px',
-          top: '50%', // Position the icon in the center
+          top: '50%',
           left: '50%',
-          transform: 'translate(-50%, -50%)', // Center the icon
+          transform: 'translate(-50%, -50%)', 
         }}
       />
     </div>

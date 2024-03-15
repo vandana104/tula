@@ -1,32 +1,3 @@
-// import React from 'react'
-// import { Box } from '@mui/material'
-// import FormBg from "../assets/images/formBg.svg";
-
-// import FormFooter from "../assets/images/formFooter.svg";
-
-// const AdmissionForm = () => {
-//   return (
-//     <div>
-//          {/* Fourth section -- Form */}
-//       {/* not done */}
-//       <Box display="flex" flexDirection="column">
-//         <img
-//           style={{ width: "100%", objectFit: "contain", cursor: "pointer" }}
-//           src={FormBg}
-//           alt="formBg"
-//         />
-//         <img
-//           style={{ objectFit: "contain", cursor: "pointer" }}
-//           src={FormFooter}
-//           alt="formFooter"
-//         />
-//       </Box>
-//     </div>
-//   )
-// }
-
-// export default AdmissionForm
-
 import React, { useState } from "react";
 import {
   Box,
@@ -44,6 +15,7 @@ import {
   Select,
   MenuItem,
 } from "@mui/material";
+import FormFooter from "../assets/images/formFooter.svg"
 
 import FormBg from "../assets/images/formBg.svg";
 
@@ -72,22 +44,24 @@ const AdmissionForm = () => {
   };
 
   return (
-    <Container maxWidth="md">
-      <Paper elevation={3} sx={{ p: 4, borderRadius: 4 }}>
+    <>
+    <Container maxWidth="100%" sx={{height:"70vh", backgroundImage: `url(${FormBg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    display:"flex", justifyContent:"center",}}>
+      <Paper elevation={3} sx={{ p: 4, borderRadius: 4,width:"80%" ,height:"370px", mt:"60px"}}>
         <Box
           component="form"
           sx={{
             display: "flex",
             flexDirection: "column",
-            backgroundImage: `url(${FormBg})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+           
             minHeight: "60vh",
           }}
           onSubmit={handleSubmit}>
           <Typography variant="h4" sx={{ mb: 3, textAlign: "center" }}>
-            Admission Form
+            Admission Form 2024
           </Typography>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
@@ -181,11 +155,13 @@ const AdmissionForm = () => {
         </Box>
       </Paper>
       {/* <img
-        style={{ objectFit: "contain", cursor: "pointer" }}
+       
         src={FormFooter}
         alt="formFooter"
       /> */}
     </Container>
+    <img  style={{ objectFit: "contain", cursor: "pointer", width:"100%"}} src={FormFooter} alt="footer"/>
+    </>
   );
 };
 
