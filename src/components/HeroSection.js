@@ -18,7 +18,7 @@ const HeroSection = () => {
     <Box
       sx={{
         background: "#b90124",
-        width: "100%",
+        // width: "100%",
         minHeight: "auto",
         display: "flex",
         flexDirection: "column",
@@ -47,9 +47,9 @@ const HeroSection = () => {
               display: "flex",
               width: "50%",
               ml: "20%",
-              gap: "5%", // Adds space between Typography components
+              gap: "5%", 
               alignItems: "center",
-              position: "relative", // Added position relative for absolute positioning of images
+              position: "relative", 
             }}
             color="white">
             <Typography variant="body2" style={{ cursor: "pointer" }}>INQUIRE</Typography>
@@ -68,127 +68,127 @@ const HeroSection = () => {
         </Box>
 
         {/* First image section */}
-        {/* //need to replace the text yo italics and adjust the position */}
+        
+        <Box sx={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}>
+  <img
+    width="600px"
+    height="600px"
+    src={italicText}
+    alt="LetsDoIt"
+    style={{ position: "relative", cursor: "pointer" }}
+  />
+  <img
+    src={Shooting}
+    style={{
+      height: "15%",
+      position: "absolute",
+      top: "28%",
+      left: "-33%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="Imagees"
+  />
 
-        <Box sx={{ position: "relative", display: "flex" }}>
-        <img
-            width="600px"
-            height="600px"
-            src={italicText}
-            alt="LetsDoIt"
-            style={{ position: "relative", cursor: "pointer" }}
-          />
-          <img
-            src={Shooting}
-            style={{
-              height: "150px",
-              position: "absolute",
-              top: "170px",
-              left: "-200px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="Imagees"
-          />
+  <img
+    src={Horse}
+    style={{
+      position: "absolute",
+      height: "25%",
+      top: "16%",
+      left: "117%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="images"
+  />
+  <img
+    src={Workout}
+    style={{
+      height: "25%",
+      position: "absolute",
+      top: "62%",
+      left: "-48%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="images"
+  />
+  <img
+    src={Karate}
+    style={{
+      height: "27%",
+      position: "absolute",
+      top: "62%",
+      left: "112%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="Image4"
+  />
+</Box>
+{/* Second image section */}
 
-          <img
-            src={Horse}
-            style={{
-              position: "absolute",
-              height: "250px",
-              top: "100px",
-              left: "700px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="images"
-          />
-          <img
-            src={Workout}
-            style={{
-              height: "250px",
-              position: "absolute",
-              top: "370px",
-              left: "-290px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="images"
-          />
-          <img
-            src={Karate}
-            style={{
-              height: "270px",
-              position: "absolute",
-              top: "370px",
-              left: "680px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="Image4"
-          />
-        </Box>
-        {/* Second image section */}
+<Box sx={{ position: "relative", my: "100px", display: "flex", flexDirection: "column", alignItems: "center" }}>
+  <img
+    width="600px"
+    height="600px"
+    src={italicText}
+    alt="LetsDoIt"
+    style={{ position: "relative", cursor: "pointer" }}
+  />
+  <img
+    src={Swim}
+    style={{
+      height: "15%",
+      position: "absolute",
+      top: "45%",
+      left: "-33%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="Imagees"
+  />
 
-        <Box sx={{ position: "relative", my: "100px" }}>
-          <img
-            width="600px"
-            height="600px"
-            src={italicText}
-            alt="LetsDoIt"
-            style={{ position: "relative", cursor: "pointer" }}
-          />
-          <img
-            src={Swim}
-            style={{
-              height: "150px",
-              position: "absolute",
-              top: "300px",
-              left: "-200px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="Imagees"
-          />
+  <img
+    src={Yoga}
+    style={{
+      position: "absolute",
+      height: "23%",
+      top: "16%",
+      left: "117%",
+      zIndex: 2,
+      borderRadius: "50%",
+      cursor: "pointer"
+    }}
+    alt="images"
+  />
+  <img
+    src={Workout}
+    style={{
+      height: "18%",
+      position: "absolute",
+      top: "71%",
+      left: "-17%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="images"
+  />
+  <img
+    src={Dancer}
+    style={{
+      height: "24%",
+      position: "absolute",
+      top: "62%",
+      left: "97%",
+      zIndex: 2,
+      cursor: "pointer"
+    }}
+    alt="Image4"
+  />
+</Box>
 
-          <img
-            src={Yoga}
-            style={{
-              position: "absolute",
-              height: "230px",
-              top: "100px",
-              left: "700px",
-              borderRadius:"50%",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="images"
-          />
-          <img
-            src={Workout}
-            style={{
-              height: "180px",
-              position: "absolute",
-              top: "430px",
-              left: "-100px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="images"
-          />
-          <img
-            src={Dancer}
-            style={{
-              height: "240px",
-              position: "absolute",
-              top: "370px",
-              left: "580px",
-              zIndex: 2,
-              cursor: "pointer"
-            }}
-            alt="Image4"
-          />
-        </Box>
         {/* Third tect area */}
         {/* need to add a line in between texts */}
         <Box
@@ -221,7 +221,6 @@ const HeroSection = () => {
           </Typography>
         </Box>
 
-        {/* </Box> */}
       </>
     
       {/* Fith-section
