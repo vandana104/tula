@@ -2,19 +2,15 @@ import { Box, Typography, Divider } from "@mui/material";
 import React from "react";
 import TulaLogo from "../assets/logos/tulaLogo.svg";
 import Menu from "../assets/logos/menu.svg";
-import Text from "../assets/images/letsDoItText.svg";
 import italicText from "../assets/images/italicText.svg";
 import Shooting from "../assets/images/shooting.svg";
 import Horse from "../assets/images/horse.svg";
 import Workout from "../assets/images/workout.svg";
 import Karate from "../assets/images/karate.svg";
-import FormBg from "../assets/images/formBg.svg";
-import FormFooter from "../assets/images/formFooter.svg";
+
 import Swim from "../assets/images/swim.svg";
 import Dancer from "../assets/images/dancer.svg";
 import Yoga from "../assets/images/yoga.svg";
-import Women from "../assets/images/women.svg";
-import Men from "../assets/images/Man.svg";
 import DotBackground from "./DotBackground";
 
 const HeroSection = () => {
@@ -227,20 +223,7 @@ const HeroSection = () => {
 
         {/* </Box> */}
       </>
-      {/* Fourth section -- Form */}
-      {/* not done */}
-      <Box display="flex" flexDirection="column">
-        <img
-          style={{ width: "100%", objectFit: "contain", cursor: "pointer" }}
-          src={FormBg}
-          alt="formBg"
-        />
-        <img
-          style={{ objectFit: "contain", cursor: "pointer" }}
-          src={FormFooter}
-          alt="formFooter"
-        />
-      </Box>
+    
       {/* Fith-section
       <Box display="flex" flexDirection="column" position="relative">
       <img src={Men} alt="men" style={{ position: 'absolute', top: 0, left: 0 }} />
