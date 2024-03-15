@@ -44,7 +44,6 @@ import {
   MenuItem,
 } from '@mui/material';
 
-// Assuming the path to your background image is correct
 import FormBg from '../assets/images/formBg.svg';
 
 const AdmissionForm = () => {
@@ -68,7 +67,6 @@ const AdmissionForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted:', formData);
   };
 
@@ -81,11 +79,10 @@ const AdmissionForm = () => {
             display: 'flex',
             flexDirection: 'column',
             backgroundImage: `url(${FormBg})`,
-            /* Adjust background properties to match the image */
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundPosition: 'center', // Center the background image
-            minHeight: '60vh', // Adjust minimum height as needed
+            backgroundPosition: 'center', 
+            minHeight: '60vh', 
           }}
           onSubmit={handleSubmit}
         >
@@ -135,7 +132,6 @@ const AdmissionForm = () => {
                 >
                   <MenuItem value="state1">State 1</MenuItem>
                   <MenuItem value="state2">State 2</MenuItem>
-                  {/* Add more states */}
                 </Select>
               </FormControl>
             </Grid>
@@ -149,7 +145,6 @@ const AdmissionForm = () => {
                 >
                   <MenuItem value="city1">City 1</MenuItem>
                   <MenuItem value="city2">City 2</MenuItem>
-                  {/* Add more cities */}
                 </Select>
               </FormControl>
             </Grid>
@@ -163,7 +158,6 @@ const AdmissionForm = () => {
                 >
                   <MenuItem value="cladd1">Cladd 1</MenuItem>
                   <MenuItem value="cladd2">Cladd 2</MenuItem>
-                  {/* Add more cladds */}
                 </Select>
               </FormControl>
             </Grid>
