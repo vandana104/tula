@@ -56,8 +56,8 @@ const HeroSection = () => {
             <Typography variant="body2" style={{ cursor: "pointer" }}>APPLY</Typography>
             <Typography variant="body2" style={{ cursor: "pointer" }}>SUPPORT US</Typography>
             <Divider orientation="vertical" flexItem />
-            <Typography variant="body2" style={{ cursor: "pointer" }}>ANOTHER OPTION</Typography>
-            <Typography variant="body2" style={{ cursor: "pointer" }}>LAST OPTION</Typography>
+            <Typography variant="body2" style={{ cursor: "pointer" }}>ADMISSIONS</Typography>
+            <Typography variant="body2" style={{ cursor: "pointer" }}>EVENTS</Typography>
           </Box>
           <Box gap="20px" display="flex" ml="10%" alignItems="center">
             <DotBackground height="40px" width="40px" mr="10px" style={{ cursor: "pointer" }} />
