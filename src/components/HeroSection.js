@@ -33,7 +33,7 @@ const HeroSection = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            padding: "35px 5% 0 5%",
+            pt: "35px",
           }}>
           <DotBackground>
             <img

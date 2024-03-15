@@ -1,6 +1,7 @@
 // import React from 'react'
 // import { Box } from '@mui/material'
 // import FormBg from "../assets/images/formBg.svg";
+
 // import FormFooter from "../assets/images/formFooter.svg";
 
 // const AdmissionForm = () => {
@@ -26,7 +27,7 @@
 
 // export default AdmissionForm
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Box,
   TextField,
@@ -42,18 +43,18 @@ import {
   InputLabel,
   Select,
   MenuItem,
-} from '@mui/material';
+} from "@mui/material";
 
-import FormBg from '../assets/images/formBg.svg';
+import FormBg from "../assets/images/formBg.svg";
 
 const AdmissionForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-    state: '',
-    city: '',
-    cladd: '',
+    name: "",
+    email: "",
+    mobile: "",
+    state: "",
+    city: "",
+    cladd: "",
     agree: false,
   });
 
@@ -61,13 +62,13 @@ const AdmissionForm = () => {
     const { name, value, type, checked } = event.target;
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
@@ -76,17 +77,16 @@ const AdmissionForm = () => {
         <Box
           component="form"
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
+            display: "flex",
+            flexDirection: "column",
             backgroundImage: `url(${FormBg})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center', 
-            minHeight: '60vh', 
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            minHeight: "60vh",
           }}
-          onSubmit={handleSubmit}
-        >
-          <Typography variant="h4" sx={{ mb: 3, textAlign: 'center' }}>
+          onSubmit={handleSubmit}>
+          <Typography variant="h4" sx={{ mb: 3, textAlign: "center" }}>
             Admission Form
           </Typography>
           <Grid container spacing={2}>
@@ -128,8 +128,7 @@ const AdmissionForm = () => {
                 <Select
                   name="state"
                   value={formData.state}
-                  onChange={handleChange}
-                >
+                  onChange={handleChange}>
                   <MenuItem value="state1">State 1</MenuItem>
                   <MenuItem value="state2">State 2</MenuItem>
                 </Select>
@@ -141,8 +140,7 @@ const AdmissionForm = () => {
                 <Select
                   name="city"
                   value={formData.city}
-                  onChange={handleChange}
-                >
+                  onChange={handleChange}>
                   <MenuItem value="city1">City 1</MenuItem>
                   <MenuItem value="city2">City 2</MenuItem>
                 </Select>
@@ -154,8 +152,7 @@ const AdmissionForm = () => {
                 <Select
                   name="cladd"
                   value={formData.cladd}
-                  onChange={handleChange}
-                >
+                  onChange={handleChange}>
                   <MenuItem value="cladd1">Cladd 1</MenuItem>
                   <MenuItem value="cladd2">Cladd 2</MenuItem>
                 </Select>
@@ -183,11 +180,13 @@ const AdmissionForm = () => {
           </Grid>
         </Box>
       </Paper>
+      {/* <img
+        style={{ objectFit: "contain", cursor: "pointer" }}
+        src={FormFooter}
+        alt="formFooter"
+      /> */}
     </Container>
   );
 };
 
 export default AdmissionForm;
-
-
-
