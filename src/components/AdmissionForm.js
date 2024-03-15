@@ -26,7 +26,7 @@ const AdmissionForm = () => {
     mobile: "",
     state: "",
     city: "",
-    cladd: "",
+    class: "",
     agree: false,
   });
 
@@ -122,13 +122,13 @@ const AdmissionForm = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <FormControl fullWidth required>
-                <InputLabel>Select Cladd</InputLabel>
+                <InputLabel>Select class</InputLabel>
                 <Select
-                  name="cladd"
-                  value={formData.cladd}
+                  name="class"
+                  value={formData.class}
                   onChange={handleChange}>
-                  <MenuItem value="cladd1">Cladd 1</MenuItem>
-                  <MenuItem value="cladd2">Cladd 2</MenuItem>
+                  <MenuItem value="class1">class 1</MenuItem>
+                  <MenuItem value="class2">class 2</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
